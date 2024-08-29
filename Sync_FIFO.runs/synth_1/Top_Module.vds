@@ -1,0 +1,427 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Aug 20 15:28:17 2024
+# Process ID: 324
+# Current directory: C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.runs/synth_1
+# Command line: vivado.exe -log Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+# Log file: C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.runs/synth_1/Top_Module.vds
+# Journal file: C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Module.tcl -notrace
+Command: synth_design -top Top_Module -part xc7a35tcpg236-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9808 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 456.074 ; gain = 96.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Top_Module.v:4]
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter ADDR bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO_Wrapper' [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/FIFO_Wrapper.v:5]
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter ADDR bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ram' [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/ram.v:4]
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter ADDR bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram' (1#1) [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/ram.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Write_logic' [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Write_logic.v:3]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter ADDR bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Write_logic' (2#1) [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Write_logic.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Read_logic' [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Read_logic.v:4]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter ADDR bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Read_logic' (3#1) [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Read_logic.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_Wrapper' (4#1) [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/FIFO_Wrapper.v:5]
+INFO: [Synth 8-6157] synthesizing module 'display_fifo' [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/display_fifo.v:5]
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter ADDR bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bcd_to_hex' [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/imports/new/bcd_to_hex.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_to_hex' (5#1) [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/imports/new/bcd_to_hex.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'display_fifo' (6#1) [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/display_fifo.v:5]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer_unit' [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/synchronizer_unit.v:4]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer_unit' (7#1) [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/synchronizer_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (8#1) [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Top_Module.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 511.641 ; gain = 152.141
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 511.641 ; gain = 152.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 511.641 ; gain = 152.141
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/constrs_1/new/fifo_constraint.xdc]
+Finished Parsing XDC File [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/constrs_1/new/fifo_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/constrs_1/new/fifo_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.035 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.070 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 839.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 839.070 ; gain = 479.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 839.070 ; gain = 479.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 839.070 ; gain = 479.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "wc_en_pipe2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_pointer2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/FIFO_Wrapper.v:40]
+INFO: [Synth 8-5545] ROM "ce" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sync_reset" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 839.070 ; gain = 479.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	               32 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---RAMs : 
+	               32 Bit         RAMs := 1     
+Module Write_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Read_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module FIFO_Wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module display_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      7 Bit        Muxes := 1     
+Module synchronizer_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "sync_with_1hz/sync_reset" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sync_with_1hz/ce" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'display_unit/dig2_reg[0]' (FDRE) to 'display_unit/dig2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'display_unit/dig2_reg[1]' (FDRE) to 'display_unit/dig2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'display_unit/dig2_reg[2]' (FDRE) to 'display_unit/dig2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'display_unit/dig2_reg[3]' (FDRE) to 'display_unit/dig2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'display_unit/dig2_reg[4]' (FDRE) to 'display_unit/dig2_reg[5]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 839.070 ; gain = 479.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------+-----------+----------------------+--------------+
+|Top_Module  | FIFO/mem/memory_reg | Implied   | 8 x 4                | RAM32M x 1   | 
++------------+---------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 839.070 ; gain = 479.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 856.746 ; gain = 497.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------+-----------+----------------------+--------------+
+|Top_Module  | FIFO/mem/memory_reg | Implied   | 8 x 4                | RAM32M x 1   | 
++------------+---------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 858.043 ; gain = 498.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 858.043 ; gain = 498.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 858.043 ; gain = 498.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 858.043 ; gain = 498.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 858.043 ; gain = 498.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 858.043 ; gain = 498.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 858.043 ; gain = 498.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    17|
+|3     |LUT1   |     4|
+|4     |LUT2   |     3|
+|5     |LUT3   |     2|
+|6     |LUT4   |    58|
+|7     |LUT5   |    10|
+|8     |LUT6   |    23|
+|9     |RAM32M |     1|
+|10    |FDRE   |    94|
+|11    |FDSE   |     7|
+|12    |IBUF   |     8|
+|13    |OBUF   |    13|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------+------+
+|      |Instance            |Module            |Cells |
++------+--------------------+------------------+------+
+|1     |top                 |                  |   241|
+|2     |  FIFO              |FIFO_Wrapper      |    43|
+|3     |    mem             |ram               |     5|
+|4     |    rd_control      |Read_logic        |     8|
+|5     |    wr_control      |Write_logic       |    13|
+|6     |  display_unit      |display_fifo      |    89|
+|7     |    rd_data_convert |bcd_to_hex        |     7|
+|8     |    wr_data_convert |bcd_to_hex_0      |     7|
+|9     |  sync_with_1hz     |synchronizer_unit |    87|
++------+--------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 858.043 ; gain = 498.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 858.043 ; gain = 171.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 858.043 ; gain = 498.543
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 859.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 859.633 ; gain = 512.508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 859.633 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.runs/synth_1/Top_Module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 20 15:28:52 2024...

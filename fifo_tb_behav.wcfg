@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fifo_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fifo_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="49999980000000fs"></ZoomStartTime>
+      <ZoomEndTime time="42249999980000001fs"></ZoomEndTime>
+      <Cursor1Time time="11999999980000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/clk_1hz_en" type="logic">
+      <obj_property name="ElementShortName">clk_1hz_en</obj_property>
+      <obj_property name="ObjectShortName">clk_1hz_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/fifo_wr_en" type="logic">
+      <obj_property name="ElementShortName">fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/fifo_wr_data" type="array">
+      <obj_property name="ElementShortName">fifo_wr_data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_wr_data[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/fifo_rd_en" type="logic">
+      <obj_property name="ElementShortName">fifo_rd_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/fifo_rd_data" type="array">
+      <obj_property name="ElementShortName">fifo_rd_data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_rd_data[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/fifo_full" type="logic">
+      <obj_property name="ElementShortName">fifo_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/fifo_empty" type="logic">
+      <obj_property name="ElementShortName">fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/fifo_data_count" type="array">
+      <obj_property name="ElementShortName">fifo_data_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/fifo_wr_addr" type="array">
+      <obj_property name="ElementShortName">fifo_wr_addr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_wr_addr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/DUT/FIFO/fifo_rd_addr" type="array">
+      <obj_property name="ElementShortName">fifo_rd_addr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_rd_addr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/AN" type="array">
+      <obj_property name="ElementShortName">AN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">AN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/digit_switch" type="array">
+      <obj_property name="ElementShortName">digit_switch[6:0]</obj_property>
+      <obj_property name="ObjectShortName">digit_switch[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

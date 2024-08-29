@@ -1,0 +1,3 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+$finish called at time : 37999999990 ns : File "C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sim_1/new/fifo_tb.v" Line 75

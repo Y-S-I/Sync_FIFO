@@ -1,0 +1,15 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sim_1/new/fifo_tb.v,1723816103,verilog,,,,fifo_tb,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sim_1/new/ram_tb.v,1723632026,verilog,,,,ram_tb,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/imports/new/bcd_to_hex.v,1723458871,verilog,,C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/display_fifo.v,,bcd_to_hex,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/FIFO_Wrapper.v,1723796310,verilog,,C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Read_logic.v,,FIFO_Wrapper,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Read_logic.v,1723796491,verilog,,C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Top_Module.v,,Read_logic,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Top_Module.v,1723796248,verilog,,C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Write_logic.v,,Top_Module,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/Write_logic.v,1723796455,verilog,,C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/imports/new/bcd_to_hex.v,,Write_logic,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/display_fifo.v,1723801713,verilog,,C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/ram.v,,display_fifo,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/ram.v,1723796352,verilog,,C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/synchronizer_unit.v,,ram,,,,,,,,
+C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sources_1/new/synchronizer_unit.v,1723807003,verilog,,C:/Reality/Verilog Workspace/Sync_FIFO/Sync_FIFO.srcs/sim_1/new/fifo_tb.v,,synchronizer_unit,,,,,,,,
